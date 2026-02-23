@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foodies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #f8fff5, #e8f5e9);
+        }
+
+        header {
+            background: #2e7d32;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+
+        nav {
+            background: #1b5e20;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #c8e6c9;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        .product {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.4s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #2e7d32;
+        }
+
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #2e7d32;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1b5e20;
+        }
+
+        footer {
+            background: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Foodies</h1>
+    <p>Fresh • Healthy • Delicious</p>
+</header>
+
+<nav>
+    <a href="#products">Products</a>
+    <a href="#order">Order Now</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="products">
+    <div class="product">
+        <h2>Ready-to-Eat Mix</h2>
+        <p>Instant Upma, Poha, Dosa & Millet blends for quick healthy meals.</p>
+    </div>
+
+    <div class="product">
+        <h2>Dry Fruits</h2>
+        <p>Premium almonds, cashews, pistachios & raisins. Hygienically packed.</p>
+    </div>
+
+    <div class="product">
+        <h2>À La Carte</h2>
+        <p>Custom spice blends, pickles and bulk food orders available.</p>
+    </div>
+</section>
+
+<section id="order">
+    <h2>Place Your Order</h2>
+    <form>
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Select Product</label>
+        <select>
+            <option>Ready-to-Eat Mix</option>
+            <option>Dry Fruits</option>
+            <option>À La Carte</option>
+        </select>
+
+        <label>Quantity</label>
+        <input type="number" placeholder="Enter quantity">
+
+        <label>Address</label>
+        <textarea placeholder="Enter delivery address"></textarea>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</section>
+
+<footer id="contact">
+    📞 +91 1234567890 | 📧 foodies@email.com
+</footer>
+
+</body>
+</html>
